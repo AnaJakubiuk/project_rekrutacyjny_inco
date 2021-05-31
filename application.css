@@ -1,0 +1,360 @@
+:root{
+    --fontcolor: #666666;
+    --fontsize: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+######################################
+TYPOGRAFIA
+######################################
+*/
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+}
+/*
+######################################
+STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+######################################
+*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+}
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    width: 100%;
+}
+.logo_mrcoffe{
+    height: 200px;
+    position: sticky; 
+}
+/*
+######################################
+GŁÓWNY LAYOUT STRONY - HEADER
+######################################
+*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header{
+    background: #78909C;
+    height: 80px;
+}
+.logo{
+	height: 60px;
+}
+/*
+######################################
+NAWIGACJA
+######################################
+*/
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu a {
+	color: #f4f4f4;
+    text-decoration: none;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li:first-child{
+    margin-left: 0;
+}
+/*
+######################################
+SEKCJA "HOME"
+######################################
+*/
+.mr_coffee_salle{
+    width: 95%;
+    position: static;
+}
+.main-title{
+   text-align: center;
+   color: white;
+   width: 100%;
+   position: absolute;
+   top: 12%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 35px;
+}
+.main-subtitle, .progamme-subtitle{
+    text-align: center;
+    color: var(--fontcolor);
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.row {
+    overflow: auto;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.col-4 img{
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col-4 h1{
+    padding-bottom: 20px;
+}
+.col {
+    float: left;
+    border: 5px solid #f4f4f4 ;
+}  
+.col-4 {
+    width: 28%;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.col-10{
+    padding-top: 50px;
+}
+/*
+######################################
+PRZYCISK
+######################################
+*/
+.savoir-button{
+    border: none;
+    background-color: grey;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    margin:0 auto;
+    align-items: center;
+    font-size: 28px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.icon_open{
+    height: 100px;
+}
+.heures-douverture-subtitle{
+    color: var(--fontcolor);
+    font-size: 30px;
+    font-weight: bold;
+}
+.left-side, .right-side{
+    width: 45%;
+    padding-bottom: 60px;
+    color: var(--fontcolor);
+    font-size: var(--fontsize);
+    border: 10px solid #f4f4f4 ;
+    line-height: 1.5;
+}
+.left-side-heading, .right-side-heading{
+    padding-bottom: 40px;
+}
+.left-side-text, .right-side-text{
+    font-weight: bold;
+    color: #333333;
+}
+span.bold{
+    color: #333333;
+}
+.evenements, .contact, .attend{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    font-size: 30px;
+    color: var(--fontcolor);
+}
+/*
+######################################
+SEKCJA "ABOUT"
+######################################
+*/
+.col-6{
+    width: 45%;
+    color: var(--fontcolor);
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 1.5;
+}
+.col-6 p{
+    padding-bottom: 20px;
+    font-size: var(--fontsize);
+}
+.col-6 h1{
+    padding-bottom: 30px;
+}
+.col-6 img{
+    height: 700px;
+    width: 100%;
+}
+/*
+######################################
+SEKCJA "CONTACT"
+######################################
+*/
+.map{
+    width: 70%;
+    padding-top: 60px;
+}
+.contact-info{
+    width: 70%;
+    text-align: left;
+    color: var(--fontcolor);
+    line-height: 1.5;
+    font-size: var(--fontsize);
+}
+.tel-mail{
+    padding-top: 25px;
+}
+/*
+######################################
+GŁÓWNY LAYOUT STRONY - FOOTER
+######################################
+*/
+.footer{
+    display: flex;
+    background: #78909C;
+    height: 100px;
+    color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+.logo-footer{
+    height: 60%;
+}
+/*
+######################################
+LINKI DO SOCIAL MEDIA
+######################################
+*/
+.social{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.social img{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 30px;
+}
+.social-image{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+/*
+######################################
+@MEDIA 
+######################################
+*/
+/*breakpoints*/
+/*mobile - do 480px / 640 px
+tablet - do 768px/1024px
+desktop - 768px + 1024px+
+*/
+
+@media screen and (max-width: 786px){
+    .right-side{
+        width: 100%;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .col {
+        width: 100%;
+        float: none;
+    }
+    .col-4 {
+        font-size: 15px;
+    }
+    .header, .footer{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+    .logo-footer{
+        height: 10%;
+    }
+    .social img{
+        height: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px){
+    .right-side{
+        width: 100%;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .col {
+        width: 100%;
+        float: none;
+    }
+    .header, .footer{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main-title{
+        font-size: 25px;
+    }
+    .col-4, .col-6{
+        font-size: 15px;
+        float: none;
+        width: 100%;
+    }
+    .logo-footer{
+        height: 20%;
+    }
+    .social img{
+        height: 30px;
+    }
+}
+
